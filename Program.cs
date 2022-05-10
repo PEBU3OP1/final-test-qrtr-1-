@@ -35,3 +35,26 @@ int ArrayCount(string[] ar)
     }
     return count;
 }
+void FinalArray(string[] ar, int count)
+{
+    string[] finalArray = new string[count];
+    int i = 0;
+
+    Console.WriteLine("Финальный массив: ");
+    for (int j = 0; j < ar.Length; j++)
+    {
+        if (ar[j].Length < 4)
+        {
+            finalArray[i] = ar[j];
+            Console.Write(finalArray[i] + " ");
+            i++;
+        }
+
+    }
+
+
+}
+
+string[] Arr = NewArrayFilling();
+Console.WriteLine();
+FinalArray(Arr, ArrayCount(Arr));
