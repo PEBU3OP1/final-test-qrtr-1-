@@ -23,3 +23,15 @@
 
     return ar;
 }
+int ArrayCount(string[] ar)
+{
+    int count = 0;
+    for (int i = 0; i < ar.Length; i++)
+    {
+        if (ar[i].Length < 4)
+        {
+            count++;
+        }
+    }
+    return count;
+}
